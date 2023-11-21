@@ -14,7 +14,8 @@ app.use((req, res, next) => {
     res.status(404).sendFile(path.join(__dirname, 'templates', '404.html'));
 });
 
-port = process.env.PORT || 3000
+const port = process.env.PORT || 5000;
+
 app.listen(port, () => {
     console.log("Listening on " + port)
 })
